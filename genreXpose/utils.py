@@ -36,7 +36,7 @@ else:
     
 DATA_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data")
 
-CHART_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), "charts")
+CHART_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), "graphs")
 
 MODEL_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), "saved_model")
 
@@ -95,25 +95,7 @@ def plot_confusion_matrix(cm, genre_list, name, title):
     #pylab.show()
     pylab.savefig(os.path.join(CHART_DIR, "confusion_matrix_%s.png" % name), bbox_inches="tight")
 
-def plot_pr(auc_score, name, precision, recall, label=None):
-    """
-        Plots Precision-Recall curves.
-    """
-    pylab.clf()
-    pylab.figure(num=None, figsize=(5, 4))
-    pylab.grid(True)
-    pylab.fill_between(recall, precision, alpha=0.5)
-    pylab.plot(recall, precision, lw=1)
-    pylab.xlim([0.0, 1.0])
-    pylab.ylim([0.0, 1.0])
-    pylab.xlabel('Recall')
-    pylab.ylabel('Precision')
-    pylab.title('P/R curve (AUC = %0.2f) / %s' % (auc_score, label))
-    filename = name.replace(" ", "_")
-    pylab.savefig(os.path.join(CHART_DIR, "pr_" + filename + ".png"), bbox_inches="tight")
-
-
-def plot_roc(auc_score, name, tpr, fpr, label=None):
+def plot_roc_curves(auc_score, name, tpr, fpr, label=None):
     """
         Plots ROC cuurves.
     """
