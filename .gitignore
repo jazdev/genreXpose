@@ -7,8 +7,9 @@ __pycache__/
 
 #Project directories
 data/
-charts/
+graphs/
 saved_model/
+
 
 # C extensions
 *.so
