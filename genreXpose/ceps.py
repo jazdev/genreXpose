@@ -1,7 +1,6 @@
 import os
 import glob
 import sys
-
 import numpy as np
 import scipy
 import scipy.io.wavfile
@@ -16,7 +15,7 @@ def write_ceps(ceps, fn):
     base_fn, ext = os.path.splitext(fn)
     data_fn = base_fn + ".ceps"
     np.save(data_fn, ceps)
-    print "Written", data_fn
+    print "Written ", data_fn
 
 
 def create_ceps(fn):
@@ -52,14 +51,12 @@ def create_ceps_test(fn):
     """
     sample_rate, X = scipy.io.wavfile.read(fn)
     X[X==0]=1
-    #print X
     np.nan_to_num(X)
     ceps, mspec, spec = mfcc(X)
-    #print ceps
     base_fn, ext = os.path.splitext(fn)
     data_fn = base_fn + ".ceps"
     np.save(data_fn, ceps)
-    print "Written", data_fn
+    print "Written ", data_fn
     return data_fn
 
 def read_ceps_test(test_file):
@@ -72,7 +69,6 @@ def read_ceps_test(test_file):
     ceps = np.load(test_file)
     num_ceps = len(ceps)
     X.append(np.mean(ceps[int(num_ceps / 10):int(num_ceps * 9 / 10)], axis=0))
-    #y.append(label)
     return np.array(X), np.array(y)
 
 if __name__ == "__main__":
@@ -82,21 +78,17 @@ if __name__ == "__main__":
     for subdir, dirs, files in os.walk(GENRE_DIR):
         traverse = list(set(dirs).intersection( set(GENRE_LIST) ))
         break
-    #traversed = ".".join(x for x in traverse)
     print "Working with these genres --> ", traverse
-    
-    t=set()
+    print "Starting ceps generation"     
     for subdir, dirs, files in os.walk(GENRE_DIR):
-        #print subdir
         for file in files:
             path = subdir+'/'+file
             if path.endswith("wav"):
                 tmp = subdir[subdir.rfind('/',0)+1:]
                 if tmp in traverse:
                     create_ceps(path)
-
+                    
     stop = timeit.default_timer()
-
     print "Total ceps generation and feature writing time (s) = ", (stop - start) 
 
 
