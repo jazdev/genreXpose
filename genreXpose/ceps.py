@@ -41,7 +41,6 @@ def read_ceps(genre_list, base_dir=GENRE_DIR):
             num_ceps = len(ceps)
             X.append(np.mean(ceps[int(num_ceps / 10):int(num_ceps * 9 / 10)], axis=0))
             y.append(label)
-
     return np.array(X), np.array(y)
 
 
@@ -77,7 +76,6 @@ def read_ceps_test(test_file):
 if __name__ == "__main__":
     import timeit
     start = timeit.default_timer()
-
     for subdir, dirs, files in os.walk(GENRE_DIR):
         traverse = list(set(dirs).intersection( set(GENRE_LIST) ))
         break
@@ -93,7 +91,3 @@ if __name__ == "__main__":
                     
     stop = timeit.default_timer()
     print "Total ceps generation and feature writing time (s) = ", (stop - start) 
-
-
-
-
