@@ -44,6 +44,7 @@ def read_ceps(genre_list, base_dir=GENRE_DIR):
 
     return np.array(X), np.array(y)
 
+
 def create_ceps_test(fn):
     """
         Creates the MFCC features from the test files,
@@ -59,6 +60,7 @@ def create_ceps_test(fn):
     print "Written ", data_fn
     return data_fn
 
+
 def read_ceps_test(test_file):
     """
         Reads the MFCC features from disk and
@@ -70,6 +72,7 @@ def read_ceps_test(test_file):
     num_ceps = len(ceps)
     X.append(np.mean(ceps[int(num_ceps / 10):int(num_ceps * 9 / 10)], axis=0))
     return np.array(X), np.array(y)
+
 
 if __name__ == "__main__":
     import timeit

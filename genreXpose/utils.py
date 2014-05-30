@@ -40,15 +40,18 @@ CHART_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), "graphs")
 
 MODEL_DIR = os.path.join(os.path.dirname(os.path.realpath(__file__)), "saved_model")
 
+
 for d in [DATA_DIR, CHART_DIR, MODEL_DIR]:
     if not os.path.exists(d):
         os.mkdir(d)
+
 
 def convert_any_to_wav(filename):
     """
         Converts the input file to the WAV format.
     """
     pass
+
 
 def convert_dataset_to_wav(file_name):
     """
@@ -74,6 +77,7 @@ def convert_dataset_to_wav(file_name):
     stop = timeit.default_timer()
     print "Conversion time = ", (stop - start) 
 
+
 def plot_confusion_matrix(cm, genre_list, name, title):
     """
         Plots confusion matrices.
@@ -95,6 +99,7 @@ def plot_confusion_matrix(cm, genre_list, name, title):
     #pylab.show()
     pylab.savefig(os.path.join(CHART_DIR, "confusion_matrix_%s.png" % name), bbox_inches="tight")
 
+
 def plot_roc_curves(auc_score, name, tpr, fpr, label=None):
     """
         Plots ROC cuurves.
@@ -113,13 +118,3 @@ def plot_roc_curves(auc_score, name, tpr, fpr, label=None):
     pylab.legend(loc="lower right")
     filename = name.replace(" ", "_")
     pylab.savefig(os.path.join(CHART_DIR, "roc_" + filename + ".png"), bbox_inches="tight")
-
-
-def show_most_informative_features(vectorizer, clf, n=20):
-    c_f = sorted(zip(clf.coef_[0], vectorizer.get_feature_names()))
-    top = zip(c_f[:n], c_f[:-(n + 1):-1])
-    for (c1, f1), (c2, f2) in top:
-        print "\t%.4f\t%-15s\t\t%.4f\t%-15s" % (c1, f1, c2, f2)
-
-
-

@@ -92,7 +92,7 @@ if __name__ == "__main__":
     print " Starting classification \n"
     print " Classification running ... \n" 
     X, y = read_ceps(genre_list)
-    train_avg, test_avg, cms = train_model(X, y, "LogisticCEPS", plot=True)
+    train_avg, test_avg, cms = train_model(X, y, "ceps", plot=True)
     cm_avg = np.mean(cms, axis=0)
     cm_norm = cm_avg / np.sum(cm_avg, axis=0)
     print " Classification finished \n"
