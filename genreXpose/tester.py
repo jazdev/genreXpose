@@ -50,6 +50,5 @@ if __name__ == "__main__":
 
     test_file = "/home/jaz/Desktop/genre-project/genres_test_set/Metallica - Enter the Sandman -  mp3.pk.wav"
     # should predict genre as "ROCK"
-
     predicted_genre = test_model_on_single_file(test_file)
     
