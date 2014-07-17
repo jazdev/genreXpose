@@ -35,6 +35,12 @@ your-working-dir/
 
 The ```genreXpose/``` directory contains the main code-base. This directory also contains the ```config.cfg``` file which is used for the configuraton of the software.
 
+* ```graphs/``` will contain all the generated graphs. The graphs are an excellent indicator of the performance of the algorithm.
+
+* ```test/``` houses all the tests.
+
+* The function of the other files will be explained in subsequent sections.
+
 The ```docs/``` directory contains all the relevant documentation of the software. 
 
 The ```LICENSE``` contains important copyright references and redistribution terms.
@@ -43,9 +49,10 @@ The ```requirements.txt``` file lists all the requirements that need to be satis
 
 To install the required packages use the following command: 
 
-		``` pip install -r requirements.txt```
+``` 
+		$ pip install -r requirements.txt
 		
-		
+```	
 
 ###2. Setup & Configuration
 
