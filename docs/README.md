@@ -16,16 +16,16 @@ The project has the following directory structure:
 your-working-dir/
  |
  |-docs/
- | |-README.md
+ |  |-README.md
  |
  |-genreXpose/
- | |-graphs/
- | |-test/
- | |-ceps.py
- | |-classifier.py
- | |-config.cfg
- | |-tester.py
- | |-utils.py
+ |  |-graphs/
+ |  |-test/
+ |  |-ceps.py
+ |  |-classifier.py
+ |  |-config.cfg
+ |  |-tester.py
+ |  |-utils.py
  | 
  |-LICENSE
  |
@@ -33,6 +33,19 @@ your-working-dir/
 
 ```
 
+The ```genreXpose/``` directory contains the main code-base. This directory also contains the ```config.cfg``` file which is used for the configuraton of the software.
+
+The ```docs/``` directory contains all the relevant documentation of the software. 
+
+The ```LICENSE``` contains important copyright references and redistribution terms.
+
+The ```requirements.txt``` file lists all the requirements that need to be satisfied in order to run this software. 
+
+To install the required packages use the following command: 
+
+		``` pip install -r requirements.txt```
+		
+		
 
 ###2. Setup & Configuration
 
