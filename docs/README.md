@@ -49,7 +49,6 @@ To install the required packages use the following command:
 
 ``` 
 		$ pip install -r requirements.txt
-		
 ```	
 
 ###2. Setup & Configuration
