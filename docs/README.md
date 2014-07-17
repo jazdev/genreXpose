@@ -48,7 +48,7 @@ The ```requirements.txt``` file lists all the requirements that need to be satis
 To install the required packages use the following command: 
 
 ``` 
-		$ pip install -r requirements.txt
+		$ pip install -r /path/to/requirements.txt
 ```	
 
 ###2. Setup & Configuration
