@@ -53,6 +53,12 @@ To install the required packages use the following command:
 
 ###2. Setup & Configuration
 
+All the configuraton can be done using the ```config.cfg``` file. This file follows a particular syntax for storing the configurations. Please respect the syntax if you want to avoid bugs.
+
+This file contains four variables that the user can modify as per his need. Comments begin with a ```#``` symbol and run till the end of a line. Rest everything is supposed to be valid configuration data.
+
+The variables are:
+
 
 ###3. The Dataset
 
