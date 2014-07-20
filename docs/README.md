@@ -50,6 +50,13 @@ To install the required packages use the following command:
 ``` 
 		$ pip install -r /path/to/requirements.txt
 ```	
+In particular, this software requires you to have the following:
+* NumPy
+* PyDub
+* SciPy
+* scikit-learn
+* scikits.statsmodels
+* scikits.talkbox
 
 ###2. Setup & Configuration
 
@@ -82,6 +89,7 @@ The dataset used for training the model is the GTZAN dataset. A brief of the dat
 
 ###4. Model Generation & Caching
 
+The 
 
 ###5. Testing and Live Usage
 
