@@ -74,7 +74,7 @@ The dataset used for training the model is the GTZAN dataset. A brief of the dat
 
 * The dataset consists of 1000 audio tracks each 30 seconds long. It contains 10 genres, each represented by 100 tracks. The tracks are all 22050Hz Mono 16-bit audio files in .wav format.
 
-* Oficial web-page: [marsyas.info](http://marsyas.info/download/data_sets)
+* Official web-page: [marsyas.info](http://marsyas.info/download/data_sets)
 
 * Download size: Approximately 1.2GB
 
