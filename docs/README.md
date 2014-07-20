@@ -62,6 +62,8 @@ The variables are:
 * ```TEST_DIR``` - This is the directory where the test music is located
 * ```GENRE_LIST``` - This is a list of the available genre types that you can use. Modify this list if you want to work with a subset of the available genres.
 
+Set these three variables according to your system before proceeding to the next steps.
+
 ###3. The Dataset
 
 
