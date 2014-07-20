@@ -75,7 +75,7 @@ Set these three variables according to your system before proceeding to the next
 
 The dataset used for training the model is the GTZAN dataset. A brief of the data set: 
 
-* This dataset was used for the well known paper in genre classification " Musical genre classification of audio signals " by G. Tzanetakis and P. Cook in IEEE Transactions on Audio and Speech Processing 2002.  
+* This dataset was used for the well known paper in genre classification " Musical genre classification of audio signals " by G. Tzanetakis and P. Cook in IEEE Transactions on Audio and Speech Processing 2002.
 
 * The files were collected in 2000-2001 from a variety of sources including personal CDs, radio, microphone recordings, in order to represent a variety of recording conditions. 
 
@@ -89,7 +89,7 @@ The dataset used for training the model is the GTZAN dataset. A brief of the dat
 
 ###4. Model Generation & Caching
 
-The 
+The GTZAN dataset is used for training the classifier, which generates an in-memory regression model. This process id done by the ```LogisticRegression``` module of the scikit-learn library. Once the model has been generated, we can use it to predict genres of other audio files. For effecient further use of the generated model, it is permanently serialized to the disk, and is deserialized when it needs to be used again. This simple process improves performance greatly.
 
 ###5. Testing and Live Usage
 
