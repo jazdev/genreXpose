@@ -55,10 +55,12 @@ To install the required packages use the following command:
 
 All the configuraton can be done using the ```config.cfg``` file. This file follows a particular syntax for storing the configurations. Please respect the syntax if you want to avoid bugs.
 
-This file contains four variables that the user can modify as per his need. Comments begin with a ```#``` symbol and run till the end of a line. Rest everything is supposed to be valid configuration data.
+This file contains three variables that the user can modify as per his need. Comments begin with a ```#``` symbol and run till the end of a line. Rest everything is supposed to be valid configuration data.
 
 The variables are:
-
+* ```GENRE_DIR``` - This is directory where the music dataset is located (GTZAN dataset) 
+* ```TEST_DIR``` - This is the directory where the test music is located
+* ```GENRE_LIST``` - This is a list of the available genre types that you can use. Modify this list if you want to work with a subset of the available genres.
 
 ###3. The Dataset
 
