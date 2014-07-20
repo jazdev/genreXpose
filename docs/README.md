@@ -89,7 +89,7 @@ The dataset used for training the model is the GTZAN dataset. A brief of the dat
 
 ###4. Model Generation & Caching
 
-The GTZAN dataset is used for training the classifier, which generates an in-memory regression model. This process id done by the ```LogisticRegression``` module of the scikit-learn library. Once the model has been generated, we can use it to predict genres of other audio files. For effecient further use of the generated model, it is permanently serialized to the disk, and is deserialized when it needs to be used again. This simple process improves performance greatly. For serialization, the 111joblib``` module in the ```sklearn.externals``` package is used.
+The GTZAN dataset is used for training the classifier, which generates an in-memory regression model. This process id done by the ```LogisticRegression``` module of the scikit-learn library. Once the model has been generated, we can use it to predict genres of other audio files. For effecient further use of the generated model, it is permanently serialized to the disk, and is deserialized when it needs to be used again. This simple process improves performance greatly. For serialization, the ```joblib``` module in the ```sklearn.externals``` package is used.
 
 ###5. Testing and Live Usage
 
