@@ -87,6 +87,8 @@ The dataset used for training the model is the GTZAN dataset. A brief of the dat
 
 * Download link: [Download the GTZAN genre collection](http://opihi.cs.uvic.ca/sound/genres.tar.gz)
 
+Since the files in the dataset are in the ```mp3``` format (which is lossy), they need to be converted in the ```wav``` format (which is lossless) before we proceed further.
+
 ###4. Model Generation & Caching
 
 The GTZAN dataset is used for training the classifier, which generates an in-memory regression model. This process is done by the ```LogisticRegression``` module of the scikit-learn library. The ```classifier.py``` script has been provided for this purpose. Once the model has been generated, we can use it to predict genres of other audio files. For effecient further use of the generated model, it is permanently serialized to the disk, and is deserialized when it needs to be used again. This simple process improves performance greatly. For serialization, the ```joblib``` module in the ```sklearn.externals``` package is used.
