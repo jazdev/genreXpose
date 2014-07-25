@@ -99,6 +99,8 @@ As of now, the ```classifier.py``` script must be run before any testing with un
 
 ###5. Testing and Live Usage
 
+NOTE: be sure to fully complete step 2 and step 4 before moving further.
+
 The ```tester.py``` script is used for the classification of new and unlabelled audio files. This script deserializes the previously cached model (stored at the path: ```./saved_model/model_ceps.pkl```) and uses it for classifying new audio files. 
 
 ```
