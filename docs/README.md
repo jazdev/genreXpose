@@ -99,7 +99,8 @@ NOTE: be sure to fully complete step 2 and step 4 before moving further.
 The ```tester.py``` script is used for the classification of new and unlabelled audio files. This script deserializes the previously cached model (stored at the path: ```./saved_model/model_ceps.pkl```) and uses it for classifying new audio files. 
 
 ```
-IMPORTANT NOTE: As of now, the classifier script must be run at least once before you run the testing script. This is needed because the classifier script builds and saves the trained model to the disk.
+IMPORTANT NOTE: As of now, the classifier script must be run at least once before you run the testing script. 
+This is needed because the classifier script builds and saves the trained model to the disk.
 ```
 
 ###6. Interpreting the Output
