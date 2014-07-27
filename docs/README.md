@@ -76,15 +76,10 @@ Set these three variables according to your system before proceeding to the next
 The dataset used for training the model is the GTZAN dataset. A brief of the data set: 
 
 * This dataset was used for the well known paper in genre classification " Musical genre classification of audio signals " by G. Tzanetakis and P. Cook in IEEE Transactions on Audio and Speech Processing 2002.
-
 * The files were collected in 2000-2001 from a variety of sources including personal CDs, radio, microphone recordings, in order to represent a variety of recording conditions. 
-
 * The dataset consists of 1000 audio tracks each 30 seconds long. It contains 10 genres, each represented by 100 tracks. The tracks are all 22050Hz Mono 16-bit audio files in .wav format.
-
 * Official web-page: [marsyas.info](http://marsyas.info/download/data_sets)
-
 * Download size: Approximately 1.2GB
-
 * Download link: [Download the GTZAN genre collection](http://opihi.cs.uvic.ca/sound/genres.tar.gz)
 
 Since the files in the dataset are in the ```mp3``` format (which is lossy), they need to be converted in the ```wav``` format (which is lossless) before we proceed further.
