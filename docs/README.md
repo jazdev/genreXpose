@@ -88,6 +88,7 @@ Since the files in the dataset are in the ```mp3``` format (which is lossy), the
 
 NOTE: be sure to fully complete step 2 before moving further.
 
+
 The GTZAN dataset is used for training the classifier, which generates an in-memory regression model. This process is done by the ```LogisticRegression``` module of the scikit-learn library. The ```classifier.py``` script has been provided for this purpose. Once the model has been generated, we can use it to predict genres of other audio files. For effecient further use of the generated model, it is permanently serialized to the disk, and is deserialized when it needs to be used again. This simple process improves performance greatly. For serialization, the ```joblib``` module in the ```sklearn.externals``` package is used.
 
 As of now, the ```classifier.py``` script must be run before any testing with unknown music can be done. Once the script is run, it will save the generated model at this path: ```./saved_model/model_ceps.pkl```. Once the model has been sucessfully saved, the classification script need not be run again until some newly labelled training data is available. 
