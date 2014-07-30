@@ -6,8 +6,7 @@ __pycache__/
 *~
 
 #Project directories
-data/
-saved_model/
+genreXpose/saved_model
 
 
 # C extensions
