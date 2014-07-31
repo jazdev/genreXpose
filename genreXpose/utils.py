@@ -16,15 +16,15 @@ TEST_DIR = config["TEST_DIR"]
 GENRE_LIST = config["GENRE_LIST"]
 
 if GENRE_DIR is None or GENRE_DIR is "":
-    print "Please set GENRE_DIR in config.py"
+    print "Please set GENRE_DIR in config.cfg"
     sys.exit(1)
 
 elif TEST_DIR is None or TEST_DIR is "":
-    print "Please set TEST_DIR in config.py" 
+    print "Please set TEST_DIR in config.cfg" 
     sys.exit(1)    
 
 elif GENRE_LIST is None or len(GENRE_LIST)==0:
-    print "Please set GENRE_LIST in config.py" 
+    print "Please set GENRE_LIST in config.cfg" 
     sys.exit(1)
 
 else:
