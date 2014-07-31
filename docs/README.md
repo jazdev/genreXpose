@@ -52,7 +52,7 @@ To install the required packages use the following command:
 ```	
 In particular, this software requires you to have the following:
 * NumPy
-* PyDub
+* PyDub (+ffmpeg)
 * SciPy
 * scikit-learn
 * scikits.statsmodels

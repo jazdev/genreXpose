@@ -59,11 +59,11 @@ def convert_dataset_to_wav(file_name):
         to the WAV (uncompressed) format.
     """
     start = timeit.default_timer()
-    rootdir = '/home/jaz/Desktop/genre-project/genres_test_set'
+    rootdir = GENRE_DIR
     for subdir, dirs, files in os.walk(rootdir):
         for file in files:
             path = subdir+'/'+file
-            if path.endswith("mp3"):
+            if path.endswith("au"):
                 song = AudioSegment.from_file(path,"mp3")
                 song = song[:30000]
                 song.export(path[:-3]+"wav",format='wav')
