@@ -82,7 +82,7 @@ The dataset used for training the model is the GTZAN dataset. A brief of the dat
 * Download size: Approximately 1.2GB
 * Download link: [Download the GTZAN genre collection](http://opihi.cs.uvic.ca/sound/genres.tar.gz)
 
-Since the files in the dataset are in the ```mp3``` format (which is lossy), they need to be converted in the ```wav``` format (which is lossless) before we proceed further.
+Since the files in the dataset are in the ```au``` format, which is lossy because of compression, they need to be converted in the ```wav``` format (which is lossless) before we proceed further.
 
 ###4. Model Generation & Caching
 
