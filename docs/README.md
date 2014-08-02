@@ -109,4 +109,7 @@ When the ```classifier.py``` script is run, it generates and saves the trained m
 
 For each selected genre type, a ROC ([Receiver Operating Characteristic](http://en.wikipedia.org/wiki/Receiver_operating_characteristic)) curve is generated and stored as a ```png``` file in the ```/graphs``` directory. The ROC curve is created by plotting the fraction of true positives out of the total actual positives (True positive rate) vs. the fraction of false positives out of the total actual negatives (False positive rate), at various threshold settings.
 
+Some of the sample graphs are shown below alongwith their proper interpretation.
+
+
 ###7. Internal Details
