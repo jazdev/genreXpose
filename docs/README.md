@@ -113,5 +113,7 @@ Some of the sample graphs are shown below alongwith their proper interpretation.
 
 ![ROC curve of METAL genre](https://raw.githubusercontent.com/jazdev/genreXpose/master/genreXpose/graphs/roc_ceps_metal.png "ROC curve of METAL genre")
 
+<img style="float: right" src="https://raw.githubusercontent.com/jazdev/genreXpose/master/genreXpose/graphs/roc_ceps_pop.png" alt="ROC curve of POP genre" />
+
 
 ###7. Internal Details
