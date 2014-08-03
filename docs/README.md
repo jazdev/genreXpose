@@ -112,10 +112,12 @@ For each selected genre type, a ROC ([Receiver Operating Characteristic](http://
 Some of the sample graphs are shown below alongwith their proper interpretation.
 
 <p align="center">
+<b>ROC curve of METAL genre</b>
 <img style="float: right" src="https://raw.githubusercontent.com/jazdev/genreXpose/master/genreXpose/graphs/roc_ceps_metal.png" alt="ROC curve of METAL genre" />
 </p>
 
 <p align="center">
+<b>ROC curve of POP genre</b>
 <img style="float: right" src="https://raw.githubusercontent.com/jazdev/genreXpose/master/genreXpose/graphs/roc_ceps_pop.png" alt="ROC curve of POP genre" />
 </p>
 
