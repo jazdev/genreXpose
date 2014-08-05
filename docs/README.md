@@ -120,5 +120,8 @@ Some of the sample graphs are shown below alongwith their proper interpretation.
 
 <img style="float: right" src="https://raw.githubusercontent.com/jazdev/genreXpose/master/genreXpose/graphs/roc_ceps_pop.png" alt="ROC curve of POP genre" />
 
+#####Confusion Matrix of the classifier
+
+<img style="float: right" src="https://raw.githubusercontent.com/jazdev/genreXpose/master/genreXpose/graphs/confusion_matrix_ceps.png" alt="Confusion matrix of the classifier" />
 
 ###7. Internal Details
