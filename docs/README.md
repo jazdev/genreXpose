@@ -107,21 +107,27 @@ This is needed because the classifier script builds and saves the trained model 
 
 When the ```classifier.py``` script is run, it generates and saves the trained model to the disk. This process also results in the creation of some graphs which are stored in the ```/graphs``` directory. The genereated graphs tell the performance of the classification process.
 
+#####ROC Curves
+
 For each selected genre type, a ROC ([Receiver Operating Characteristic](http://en.wikipedia.org/wiki/Receiver_operating_characteristic)) curve is generated and stored as a ```png``` file in the ```/graphs``` directory. The ROC curve is created by plotting the fraction of true positives out of the total actual positives (True positive rate) vs. the fraction of false positives out of the total actual negatives (False positive rate), at various threshold settings.
 
 Some of the sample graphs are shown below alongwith their proper interpretation.
 
-#####ROC curve of METAL genre
-
+ROC curve of METAL genre
 <img style="float: right" src="https://raw.githubusercontent.com/jazdev/genreXpose/master/genreXpose/graphs/roc_ceps_metal.png" alt="ROC curve of METAL genre" />
 
 
-#####ROC curve of POP genre
-
+ROC curve of POP genre
 <img style="float: right" src="https://raw.githubusercontent.com/jazdev/genreXpose/master/genreXpose/graphs/roc_ceps_pop.png" alt="ROC curve of POP genre" />
 
-#####Confusion Matrix of the classifier
+
+#####Confusion Matrix
+
+To judge the overall performance, a confusion matrix is produced. A confusion matrix is a specific table layout that allows visualization of the performance of an algorithm. Each column of the matrix represents the instances in a predicted class, while each row represents the instances in an actual class. 
+
+The confusion matrix with all genres selected is shown below.
 
 <img style="float: right" src="https://raw.githubusercontent.com/jazdev/genreXpose/master/genreXpose/graphs/confusion_matrix_ceps.png" alt="Confusion matrix of the classifier" />
 
 ###7. Internal Details
+
