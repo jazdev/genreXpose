@@ -127,9 +127,10 @@ ROC curve of POP genre
 
 To judge the overall performance, a confusion matrix is produced. A confusion matrix is a specific table layout that allows visualization of the performance of an algorithm. Each column of the matrix represents the instances in a predicted class, while each row represents the instances in an actual class. 
 
-The confusion matrix with all genres selected is shown below.
+The confusion matrix with all the genres selected is shown below.
 
 <img style="float: right" src="https://raw.githubusercontent.com/jazdev/genreXpose/master/genreXpose/graphs/confusion_matrix_ceps.png" alt="Confusion matrix of the classifier" />
 
 ###7. Internal Details
+
 
