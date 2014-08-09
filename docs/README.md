@@ -140,3 +140,12 @@ A spectrogram is a visual representation of the frequency content in a song. It 
 Sample spectrograms of a few songs from the GTZAN dataset.
 
 <img style="float: right" src="https://raw.githubusercontent.com/jazdev/genreXpose/master/genreXpose/graphs/Spectrogram_Genres_clean.png" alt="Spectrograms" />
+
+It can be clearly seen from the above image that songs belonging to the same genre have similar spectrograms. Keeping this in mind, we can easily design a classifier that can learn to differentiate between the different genres with sufficient accuracy.
+
+#####Improved Performance by using MFCC
+
+MFCC = Mel Frequency Cepstral Coefficients
+
+The Mel Frequency Cepstrum (MFC) encodes the power spectrum of a sound. It is calculated as the Fourier transform of the logarithm of the signal's spectrum. The Talkbox SciKit (scikits.talkbox) contains an implementation of of MFC that we can directly use. The data that we feed into the classifier is stored as ```ceps```, which contain 13 coeffecients to uniquely represent an audio file. 
+
