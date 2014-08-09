@@ -133,4 +133,10 @@ The confusion matrix with all the genres selected is shown below.
 
 ###7. Internal Details
 
+#####Spectrograms: Proof of Concept
 
+A spectrogram is a visual representation of the frequency content in a song. It shows the intensity of the frequencies on the y axis in the specified time intervals on the x axis; that is, the darker the color, the stronger the frequency is in the particular time window of the song.
+
+Sample spectrograms of a few songs from the GTZAN dataset.
+
+<img style="float: right" src="https://raw.githubusercontent.com/jazdev/genreXpose/master/genreXpose/graphs/Spectrogram_Genres_clean.png" alt="Spectrograms" />
