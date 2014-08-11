@@ -3,9 +3,7 @@
 
 This program allows fast and automatic detection of the genre of audio/music files.
 
-This program is NOT under active development.
-
-Disclaimer : This program is provided AS IS without any warranties of any kind. 
+This project is NOT under active development.
 
 ======================
 
