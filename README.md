@@ -1,4 +1,4 @@
-#genreXpose v0.1 Docs
+# genreXpose v0.1 Docs
 ======================
 
 This program allows fast and automatic detection of the genre of audio/music files.
@@ -12,7 +12,7 @@ This document gives a quick overview on how to use this library in your projects
 For more technical details on what underlying technologies have been used in building this library, and how does this library work, read this post on my blog: [genreXpose - Quick music audio genre recognition]().
 
 
-###1. Installation
+### 1. Installation
 
 Download the whole project source from GitHub. Do this by clicking [here](https://github.com/jazdev/genreXpose/archive/master.zip). Once downloaded, extract the source to a directory of your choice. 
 
@@ -64,7 +64,7 @@ In particular, this software requires you to have the following:
 * scikits.statsmodels
 * scikits.talkbox
 
-###2. Setup & Configuration
+### 2. Setup & Configuration
 
 All the configuraton can be done using the ```config.cfg``` file. This file follows a particular syntax for storing the configurations. Please respect the syntax if you want to avoid bugs.
 
@@ -77,7 +77,7 @@ The variables are:
 
 Set these three variables according to your system before proceeding to the next steps.
 
-###3. The Dataset
+### 3. The Dataset
 
 The dataset used for training the model is the GTZAN dataset. A brief of the data set: 
 
@@ -90,7 +90,7 @@ The dataset used for training the model is the GTZAN dataset. A brief of the dat
 
 Since the files in the dataset are in the ```au``` format, which is lossy because of compression, they need to be converted in the ```wav``` format (which is lossless) before we proceed further.
 
-###4. Model Generation & Caching
+### 4. Model Generation & Caching
 
 NOTE: be sure to fully complete step 2 before moving further.
 
@@ -100,7 +100,7 @@ The GTZAN dataset is used for training the classifier, which generates an in-mem
 
 As of now, the ```classifier.py``` script must be run before any testing with unknown music can be done. Once the script is run, it will save the generated model at this path: ```./saved_model/model_ceps.pkl```. Once the model has been sucessfully saved, the classification script need not be run again until some newly labelled training data is available. 
 
-###5. Testing and Live Usage
+### 5. Testing and Live Usage
 
 NOTE: be sure to fully complete step 2 and step 4 before moving further.
 
@@ -111,11 +111,11 @@ IMPORTANT NOTE: As of now, the classifier script must be run at least once befor
 This is needed because the classifier script builds and saves the trained model to the disk.
 ```
 
-###6. Interpreting the Output
+### 6. Interpreting the Output
 
 When the ```classifier.py``` script is run, it generates and saves the trained model to the disk. This process also results in the creation of some graphs which are stored in the ```/graphs``` directory. The genereated graphs tell the performance of the classification process.
 
-#####ROC Curves
+##### ROC Curves
 
 For each selected genre type, a ROC ([Receiver Operating Characteristic](http://en.wikipedia.org/wiki/Receiver_operating_characteristic)) curve is generated and stored as a ```png``` file in the ```/graphs``` directory. The ROC curve is created by plotting the fraction of true positives out of the total actual positives (True positive rate) vs. the fraction of false positives out of the total actual negatives (False positive rate), at various threshold settings.
 
@@ -131,7 +131,7 @@ ROC curve of POP genre
 <img style="float: right" src="https://raw.githubusercontent.com/jazdev/genreXpose/master/genreXpose/graphs/roc_ceps_pop.png" alt="ROC curve of POP genre" />
 
 
-#####Confusion Matrix
+##### Confusion Matrix
 
 To judge the overall performance, a confusion matrix is produced. A confusion matrix is a specific table layout that allows visualization of the performance of an algorithm. Each column of the matrix represents the instances in a predicted class, while each row represents the instances in an actual class. 
 
@@ -139,9 +139,9 @@ The confusion matrix with all the genres selected is shown below.
 
 <img style="float: right" src="https://raw.githubusercontent.com/jazdev/genreXpose/master/genreXpose/graphs/confusion_matrix_ceps.png" alt="Confusion matrix of the classifier" />
 
-###7. Internal Details
+### 7. Internal Details
 
-#####Spectrograms: Proof of Concept
+##### Spectrograms: Proof of Concept
 
 A spectrogram is a visual representation of the frequency content in a song. It shows the intensity of the frequencies on the y axis in the specified time intervals on the x axis; that is, the darker the color, the stronger the frequency is in the particular time window of the song.
 
@@ -151,7 +151,7 @@ Sample spectrograms of a few songs from the GTZAN dataset.
 
 It can be clearly seen from the above image that songs belonging to the same genre have similar spectrograms. Keeping this in mind, we can easily design a classifier that can learn to differentiate between the different genres with sufficient accuracy.
 
-#####Improved Performance by using MFCC
+##### Improved Performance by using MFCC
 
 MFCC = Mel Frequency Cepstral Coefficients
 
